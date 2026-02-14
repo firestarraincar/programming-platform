@@ -1,3 +1,4 @@
+
 # platform.py - Полная платформа программирования с тестами
 # Установка: pip install flask flask-login sqlalchemy
 import os
@@ -1317,3 +1318,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, debug=False)
 else:
     application = app
+
