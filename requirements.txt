@@ -1,0 +1,5 @@
+flask==2.3.3
+flask-login==0.6.2
+flask-sqlalchemy==3.0.5
+werkzeug==2.3.7
+gunicorn==21.2.0
