@@ -1,14 +1,12 @@
 services:
-  - type: web
-    name: programming-platform
-    env: python
-    region: frankfurt  # или singapore, oregon, ohio
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn --workers=2 main:app
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.10.0
-    healthCheckPath: /
-
-    autoDeploy: true
+  - type: web                # 2 пробела перед "-"
+    name: programming-platform  # 4 пробела перед "name"
+    env: python               # 4 пробела
+    region: frankfurt         # 4 пробела
+    plan: free                # 4 пробела
+    buildCommand: pip install -r requirements.txt  # 4 пробела
+    startCommand: gunicorn main:app  # 4 пробела
+    envVars:                  # 4 пробела
+      - key: PYTHON_VERSION    # 6 пробелов перед "-"
+        value: 3.10.0         # 8 пробелов перед "value"
+    autoDeploy: true           # 4 пробела
